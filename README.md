@@ -1,4 +1,8 @@
-# koi-net-node-template
+# koi-net-zotero-sensor-naoe
+
+Zotero Sensor project to create a sensor in python caapable of extracting long form test and metadata for citations stored in a local Zotero database. The sensor periodically polls the database to detect new citations, updated citations and deleted citations.
+
+This repo was forked from the BlockScience repo [koi-net-node-template](https://github.com/BlockScience/koi-net-node-template)
 
 # Quick Start
 
