@@ -1,4 +1,4 @@
-# koi-net-zotero-sensor-naoe
+# koi-net-zotero-sensor-node
 
 Zotero Sensor project to create a sensor in python caapable of extracting long form test and metadata for citations stored in a local Zotero database. The sensor periodically polls the database to detect new citations, updated citations and deleted citations.
 
