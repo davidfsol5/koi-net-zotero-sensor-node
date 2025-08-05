@@ -127,6 +127,22 @@ class ZoteroCitableItem(ORN):
 2. Change class property ```node_name``` value from ```"my-node-name"``` to ```"myelligots-pond-zotero-sensor"```
 3. Keep class property ```node_type``` value as ```"FULL"```
 
+### 3. Edit core.py
+
+Use ```ZoteroSensorNodeConfig``` instead of ```MyNodeConfig```
+
+```python
+from koi_net import NodeInterface
+from .config import ZoteroSensorNodeConfig                          # Was MyNodeConfig
+
+node = NodeInterface(
+    config=ZoteroSensorNodeConfig.load_from_yaml("config.yaml"),    # Was MyNodeConfig
+    use_kobj_processor_thread=True
+)
+
+from . import handlers
+```
+
 ---
 
 ## Deadends
@@ -139,7 +155,7 @@ class ZoteroCitableItem(ORN):
 
 Resulting config.yaml file:
 
-```
+```yaml
 server:
   host: 127.0.0.1
   port: 8000
